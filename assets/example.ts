@@ -8,7 +8,7 @@ interface User {
 }
 
 // Fetch active users with optional search filter
-async function getUsers(config: Config, query?: string): Promise<User[]> {
+export async function getUsers(config: Config, query?: string): Promise<User[]> {
   const { baseUrl, timeout = 3000 } = config
   const endpoint = `${baseUrl}/api/users?limit=50`
 

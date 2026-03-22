@@ -47,7 +47,7 @@ function M.get(p, config)
     -- ── Treesitter — variables ───────────────────────────────────────────
     ["@variable"] = { fg = fg.text },
     ["@variable.builtin"] = { fg = fg.text, italic = italic },
-    ["@variable.parameter"] = { fg = fg.subtext },
+    ["@variable.parameter"] = { fg = fg.text },
     ["@variable.member"] = { fg = fg.text },
 
     -- ── Treesitter — constants ───────────────────────────────────────────

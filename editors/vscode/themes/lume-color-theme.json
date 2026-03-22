@@ -292,7 +292,7 @@
     {
       "scope": ["variable.parameter"],
       "settings": {
-        "foreground": "#b0a8c4"
+        "foreground": "#d8d0e4"
       }
     },
     {
@@ -543,7 +543,7 @@
     "interface": { "foreground": "#e8b4a0", "fontStyle": "italic" },
     "struct": "#e8b4a0",
     "typeParameter": { "foreground": "#e8b4a0", "fontStyle": "italic" },
-    "parameter": "#b0a8c4",
+    "parameter": "#d8d0e4",
     "variable": "#d8d0e4",
     "property": "#d8d0e4",
     "enumMember": "#e8b4a0",

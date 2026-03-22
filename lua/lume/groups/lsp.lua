@@ -72,7 +72,7 @@ function M.get(p, config)
 
     -- ── LSP semantic tokens — variables / parameters ─────────────────────
     ["@lsp.type.variable"] = { fg = fg.text },
-    ["@lsp.type.parameter"] = { fg = fg.subtext },
+    ["@lsp.type.parameter"] = { fg = fg.text },
     ["@lsp.type.property"] = { fg = fg.text },
 
     -- ── LSP semantic tokens — keywords ───────────────────────────────────
