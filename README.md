@@ -385,20 +385,13 @@ Then set delta as your Git pager in `~/.gitconfig`:
 <details>
 <summary>lazygit</summary>
 
+Append the theme to your lazygit config:
+
 ```bash
-mkdir -p ~/.config/lazygit
-curl -o ~/.config/lazygit/lume.yml https://raw.githubusercontent.com/danfry1/lume/main/cli/lazygit/lume.yml
+curl -s https://raw.githubusercontent.com/danfry1/lume/main/cli/lazygit/lume.yml >> "$(lazygit --print-config-dir)/config.yml"
 ```
 
-Then reference it in your lazygit `config.yml`:
-
-```yaml
-gui:
-  theme:
-    activeBorderColor:
-      - '#b8a0e0'
-      - bold
-```
+Or if you prefer, copy the `gui.theme` section from [`cli/lazygit/lume.yml`](cli/lazygit/lume.yml) into your existing `config.yml`.
 
 </details>
 
