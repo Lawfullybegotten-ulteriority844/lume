@@ -169,7 +169,7 @@ Highlight groups are included for these plugins (loaded automatically, no config
 
 ### VS Code
 
-Search for **"Lume"** in the Extensions Marketplace, or install from the command line:
+[Preview on vscodethemes.com](https://vscodethemes.com/e/DanielFry.lume-color-theme/lume) · Search for **"Lume"** in the Extensions Marketplace, or install from the command line:
 
 ```bash
 code --install-extension DanielFry.lume-color-theme
