@@ -1,0 +1,214 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Lume",
+  "author": "Daniel Fry",
+  "themes": [
+    {
+      "name": "Lume",
+      "appearance": "dark",
+      "style": {
+        "background": "{{backgrounds.base}}",
+        "border": "{{backgrounds.surface1}}",
+        "border.variant": "{{backgrounds.surface2}}",
+        "border.focused": "{{accents.lavender}}80",
+        "border.selected": "{{accents.lavender}}",
+        "border.transparent": "#00000000",
+        "border.disabled": "{{backgrounds.surface1}}",
+
+        "elevated_surface.background": "{{backgrounds.surface0}}",
+        "surface.background": "{{backgrounds.mantle}}",
+
+        "element.background": "{{backgrounds.surface0}}",
+        "element.hover": "{{backgrounds.surface0}}",
+        "element.active": "{{backgrounds.surface1}}",
+        "element.selected": "{{backgrounds.surface1}}",
+        "element.disabled": "{{backgrounds.surface0}}80",
+
+        "drop_target.background": "{{backgrounds.surface1}}80",
+
+        "ghost_element.background": "#00000000",
+        "ghost_element.hover": "{{backgrounds.surface0}}",
+        "ghost_element.active": "{{backgrounds.surface1}}",
+        "ghost_element.selected": "{{backgrounds.surface1}}",
+        "ghost_element.disabled": "{{backgrounds.surface0}}80",
+
+        "text": "{{foregrounds.text}}",
+        "text.muted": "{{foregrounds.subtext}}",
+        "text.placeholder": "{{foregrounds.overlay}}",
+        "text.disabled": "{{foregrounds.overlay}}80",
+        "text.accent": "{{accents.lavender}}",
+
+        "icon": "{{foregrounds.subtext}}",
+        "icon.muted": "{{foregrounds.overlay}}",
+        "icon.disabled": "{{foregrounds.overlay}}80",
+        "icon.placeholder": "{{foregrounds.overlay}}",
+        "icon.accent": "{{accents.lavender}}",
+
+        "status_bar.background": "{{backgrounds.mantle}}",
+        "title_bar.background": "{{backgrounds.crust}}",
+        "title_bar.inactive_background": "{{backgrounds.crust}}",
+        "toolbar.background": "{{backgrounds.base}}",
+
+        "tab_bar.background": "{{backgrounds.crust}}",
+        "tab.active_background": "{{backgrounds.base}}",
+        "tab.inactive_background": "{{backgrounds.crust}}",
+
+        "search.match_background": "{{accents.honey}}40",
+
+        "panel.background": "{{backgrounds.base}}",
+        "panel.focused_border": "{{accents.lavender}}",
+
+        "pane.focused_border": "{{accents.lavender}}",
+
+        "scrollbar.thumb.background": "{{backgrounds.surface2}}80",
+        "scrollbar.thumb.hover_background": "{{backgrounds.surface2}}b0",
+        "scrollbar.thumb.border": "#00000000",
+        "scrollbar.track.background": "#00000000",
+        "scrollbar.track.border": "#00000000",
+
+        "editor.background": "{{backgrounds.base}}",
+        "editor.foreground": "{{foregrounds.text}}",
+        "editor.gutter.background": "{{backgrounds.base}}",
+        "editor.active_line.background": "{{backgrounds.surface0}}",
+        "editor.highlighted_line.background": "{{backgrounds.surface0}}",
+        "editor.line_number": "{{foregrounds.overlay}}",
+        "editor.active_line_number": "{{accents.lavender}}",
+        "editor.indent_guide": "{{backgrounds.surface1}}",
+        "editor.indent_guide_active": "{{backgrounds.surface2}}",
+        "editor.wrap_guide": "{{backgrounds.surface1}}",
+        "editor.invisible": "{{backgrounds.surface1}}",
+        "editor.subheader.background": "{{backgrounds.mantle}}",
+
+        "link_text.hover": "{{accents.sky}}",
+
+        "conflict": "{{accents.rose}}",
+        "conflict.background": "{{accents.rose}}20",
+        "conflict.border": "{{accents.rose}}",
+
+        "created": "{{accents.sage}}",
+        "created.background": "{{accents.sage}}20",
+        "created.border": "{{accents.sage}}",
+
+        "deleted": "{{accents.ember}}",
+        "deleted.background": "{{accents.ember}}20",
+        "deleted.border": "{{accents.ember}}",
+
+        "error": "{{accents.ember}}",
+        "error.background": "{{accents.ember}}20",
+        "error.border": "{{accents.ember}}",
+
+        "hidden": "{{foregrounds.overlay}}",
+        "hidden.background": "{{backgrounds.mantle}}",
+        "hidden.border": "{{backgrounds.surface1}}",
+
+        "hint": "{{accents.teal}}",
+        "hint.background": "{{accents.teal}}20",
+        "hint.border": "{{accents.teal}}",
+
+        "ignored": "{{foregrounds.overlay}}",
+        "ignored.background": "{{backgrounds.mantle}}",
+        "ignored.border": "{{backgrounds.surface1}}",
+
+        "info": "{{accents.sky}}",
+        "info.background": "{{accents.sky}}20",
+        "info.border": "{{accents.sky}}",
+
+        "modified": "{{accents.sky}}",
+        "modified.background": "{{accents.sky}}20",
+        "modified.border": "{{accents.sky}}",
+
+        "predictive": "{{foregrounds.overlay}}",
+        "predictive.background": "{{backgrounds.surface0}}",
+        "predictive.border": "{{backgrounds.surface1}}",
+
+        "renamed": "{{accents.sky}}",
+        "renamed.background": "{{accents.sky}}20",
+        "renamed.border": "{{accents.sky}}",
+
+        "success": "{{accents.sage}}",
+        "success.background": "{{accents.sage}}20",
+        "success.border": "{{accents.sage}}",
+
+        "unreachable": "{{foregrounds.overlay}}",
+        "unreachable.background": "{{backgrounds.mantle}}",
+        "unreachable.border": "{{backgrounds.surface1}}",
+
+        "warning": "{{accents.honey}}",
+        "warning.background": "{{accents.honey}}20",
+        "warning.border": "{{accents.honey}}",
+
+        "terminal.background": "{{backgrounds.base}}",
+        "terminal.foreground": "{{foregrounds.text}}",
+        "terminal.bright_foreground": "{{foregrounds.text}}",
+        "terminal.dim_foreground": "{{foregrounds.subtext}}",
+        "terminal.ansi.black": "{{ansi.black}}",
+        "terminal.ansi.red": "{{ansi.red}}",
+        "terminal.ansi.green": "{{ansi.green}}",
+        "terminal.ansi.yellow": "{{ansi.yellow}}",
+        "terminal.ansi.blue": "{{ansi.blue}}",
+        "terminal.ansi.magenta": "{{ansi.magenta}}",
+        "terminal.ansi.cyan": "{{ansi.cyan}}",
+        "terminal.ansi.white": "{{ansi.white}}",
+        "terminal.ansi.bright_black": "{{ansi.brightBlack}}",
+        "terminal.ansi.bright_red": "{{ansi.brightRed}}",
+        "terminal.ansi.bright_green": "{{ansi.brightGreen}}",
+        "terminal.ansi.bright_yellow": "{{ansi.brightYellow}}",
+        "terminal.ansi.bright_blue": "{{ansi.brightBlue}}",
+        "terminal.ansi.bright_magenta": "{{ansi.brightMagenta}}",
+        "terminal.ansi.bright_cyan": "{{ansi.brightCyan}}",
+        "terminal.ansi.bright_white": "{{ansi.brightWhite}}",
+
+        "players": [
+          { "cursor": "{{special.cursor}}", "background": "{{special.cursor}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.sky}}", "background": "{{accents.sky}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.sage}}", "background": "{{accents.sage}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.peach}}", "background": "{{accents.peach}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.lavender}}", "background": "{{accents.lavender}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.teal}}", "background": "{{accents.teal}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.honey}}", "background": "{{accents.honey}}20", "selection": "{{special.selection}}" },
+          { "cursor": "{{accents.ember}}", "background": "{{accents.ember}}20", "selection": "{{special.selection}}" }
+        ],
+
+        "syntax": {
+          "attribute": { "color": "{{accents.sky}}", "font_style": "italic" },
+          "boolean": { "color": "{{accents.peach}}" },
+          "comment": { "color": "{{foregrounds.comment}}", "font_style": "italic" },
+          "comment.doc": { "color": "{{foregrounds.comment}}", "font_style": "italic" },
+          "constant": { "color": "{{accents.peach}}" },
+          "constructor": { "color": "{{accents.peach}}" },
+          "emphasis": { "color": "{{accents.rose}}", "font_style": "italic" },
+          "emphasis.strong": { "color": "{{accents.peach}}", "font_weight": 700 },
+          "enum": { "color": "{{accents.peach}}" },
+          "function": { "color": "{{accents.sky}}" },
+          "keyword": { "color": "{{accents.lavender}}", "font_style": "italic" },
+          "label": { "color": "{{accents.rose}}" },
+          "link_text": { "color": "{{accents.sky}}" },
+          "link_uri": { "color": "{{accents.sky}}" },
+          "namespace": { "color": "{{foregrounds.text}}" },
+          "number": { "color": "{{accents.honey}}" },
+          "operator": { "color": "{{accents.rose}}" },
+          "preproc": { "color": "{{accents.teal}}" },
+          "primary": { "color": "{{foregrounds.text}}" },
+          "property": { "color": "{{foregrounds.text}}" },
+          "punctuation": { "color": "{{foregrounds.overlay}}" },
+          "punctuation.bracket": { "color": "{{foregrounds.overlay}}" },
+          "punctuation.delimiter": { "color": "{{foregrounds.overlay}}" },
+          "punctuation.list_marker": { "color": "{{accents.rose}}" },
+          "punctuation.special": { "color": "{{accents.teal}}" },
+          "string": { "color": "{{accents.sage}}" },
+          "string.escape": { "color": "{{accents.teal}}" },
+          "string.regex": { "color": "{{accents.teal}}" },
+          "string.special": { "color": "{{accents.teal}}" },
+          "string.special.symbol": { "color": "{{accents.peach}}" },
+          "tag": { "color": "{{accents.teal}}" },
+          "text.literal": { "color": "{{accents.sage}}" },
+          "title": { "color": "{{accents.lavender}}", "font_weight": 700 },
+          "type": { "color": "{{accents.peach}}" },
+          "variable": { "color": "{{foregrounds.text}}" },
+          "variable.special": { "color": "{{foregrounds.text}}", "font_style": "italic" },
+          "variant": { "color": "{{accents.peach}}" }
+        }
+      }
+    }
+  ]
+}
