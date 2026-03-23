@@ -31,7 +31,7 @@
       <img src="https://placehold.co/24x24/b8a0e0/b8a0e0.png" alt="" /><br />
       <strong>Lavender</strong><br />
       <code>#b8a0e0</code><br />
-      <sub>keywords, primary</sub>
+      <sub>keywords, primitives</sub>
     </td>
     <td>
       <img src="https://placehold.co/24x24/d0a0b8/d0a0b8.png" alt="" /><br />
@@ -43,7 +43,7 @@
       <img src="https://placehold.co/24x24/e8b4a0/e8b4a0.png" alt="" /><br />
       <strong>Peach</strong><br />
       <code>#e8b4a0</code><br />
-      <sub>types, constants</sub>
+      <sub>types, components</sub>
     </td>
     <td>
       <img src="https://placehold.co/24x24/a0d4a8/a0d4a8.png" alt="" /><br />
@@ -57,13 +57,13 @@
       <img src="https://placehold.co/24x24/8cc0e0/8cc0e0.png" alt="" /><br />
       <strong>Sky</strong><br />
       <code>#8cc0e0</code><br />
-      <sub>functions, methods</sub>
+      <sub>functions, props</sub>
     </td>
     <td>
       <img src="https://placehold.co/24x24/88c0b8/88c0b8.png" alt="" /><br />
       <strong>Teal</strong><br />
       <code>#88c0b8</code><br />
-      <sub>special, escape</sub>
+      <sub>tags, escape</sub>
     </td>
     <td>
       <img src="https://placehold.co/24x24/c49080/c49080.png" alt="" /><br />
@@ -75,7 +75,7 @@
       <img src="https://placehold.co/24x24/c4b080/c4b080.png" alt="" /><br />
       <strong>Honey</strong><br />
       <code>#c4b080</code><br />
-      <sub>warnings, search</sub>
+      <sub>numbers, warnings</sub>
     </td>
   </tr>
 </table>
@@ -155,7 +155,7 @@ Highlight groups are included for these plugins (loaded automatically, no config
 | [mini.nvim](https://github.com/echasnovski/mini.nvim) | [noice.nvim](https://github.com/folke/noice.nvim) | [nvim-notify](https://github.com/rcarriga/nvim-notify) |
 | [trouble.nvim](https://github.com/folke/trouble.nvim) | [flash.nvim](https://github.com/folke/flash.nvim) | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) |
 | [oil.nvim](https://github.com/stevearc/oil.nvim) | [lazy.nvim](https://github.com/folke/lazy.nvim) | [which-key.nvim](https://github.com/folke/which-key.nvim) |
-| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim) / [alpha-nvim](https://github.com/goolord/alpha-nvim) | |
+| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim) / [alpha-nvim](https://github.com/goolord/alpha-nvim) | [snacks.nvim](https://github.com/folke/snacks.nvim) |
 
 ---
 
@@ -173,7 +173,7 @@ code --install-extension DanielFry.lume-color-theme
 ```bash
 cd editors/vscode
 npx @vscode/vsce package
-code --install-extension lume-0.1.0.vsix
+code --install-extension lume-color-theme-*.vsix
 ```
 
 </details>
