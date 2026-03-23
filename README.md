@@ -17,9 +17,9 @@
 
 - **Single source of truth** — every color lives in `palette.json`, all outputs are generated
 - **WCAG AA contrast** — validated at build time, never ships unreadable text
-- **14 Neovim plugin integrations** — Telescope, cmp, gitsigns, mini.nvim, noice, trouble, flash, and more
-- **Treesitter + LSP semantic tokens** — full highlighting with 200+ groups
-- **11 terminal/CLI targets** — Kitty, Alacritty, WezTerm, Ghostty, iTerm2, foot, Windows Terminal, tmux, fzf, bat, delta, lazygit
+- **15 Neovim plugin integrations** — Telescope, cmp, gitsigns, mini.nvim, noice, trouble, flash, snacks, and more
+- **Treesitter + LSP semantic tokens** — full highlighting with 450+ groups
+- **12 terminal/CLI targets** — Kitty, Alacritty, WezTerm, Ghostty, iTerm2, foot, Windows Terminal, tmux, fzf, bat, delta, lazygit
 - **Transparent mode** — use your terminal's background
 - **Configurable italics** — toggle italics for comments and keywords
 
@@ -185,6 +185,20 @@ code --install-extension lume-color-theme-*.vsix
 ```
 
 </details>
+
+---
+
+### Zed
+
+Search for **"Lume"** in the Zed extension marketplace, or install locally:
+
+```bash
+# Copy to Zed's local themes directory
+mkdir -p ~/.config/zed/themes
+cp editors/zed/themes/lume.json ~/.config/zed/themes/
+```
+
+Then select **Lume** from the theme picker (`cmd+k cmd+t`).
 
 ---
 

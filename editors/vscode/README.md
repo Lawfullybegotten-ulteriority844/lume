@@ -19,11 +19,11 @@
 | ![](https://placehold.co/16x16/b8a0e0/b8a0e0.png) | **Lavender** `#b8a0e0` | Keywords, primitives |
 | ![](https://placehold.co/16x16/d0a0b8/d0a0b8.png) | **Rose** `#d0a0b8` | Operators, control flow |
 | ![](https://placehold.co/16x16/e8b4a0/e8b4a0.png) | **Peach** `#e8b4a0` | Types, components |
-| ![](https://placehold.co/16x16/a0d4a8/a0d4a8.png) | **Sage** `#a0d4a8` | Strings |
+| ![](https://placehold.co/16x16/a0d4a8/a0d4a8.png) | **Sage** `#a0d4a8` | Strings, additions |
 | ![](https://placehold.co/16x16/8cc0e0/8cc0e0.png) | **Sky** `#8cc0e0` | Functions, props |
-| ![](https://placehold.co/16x16/88c0b8/88c0b8.png) | **Teal** `#88c0b8` | Tags, regex |
-| ![](https://placehold.co/16x16/c4b080/c4b080.png) | **Honey** `#c4b080` | Numbers |
-| ![](https://placehold.co/16x16/c49080/c49080.png) | **Ember** `#c49080` | Errors |
+| ![](https://placehold.co/16x16/88c0b8/88c0b8.png) | **Teal** `#88c0b8` | Tags, escape |
+| ![](https://placehold.co/16x16/c4b080/c4b080.png) | **Honey** `#c4b080` | Numbers, warnings |
+| ![](https://placehold.co/16x16/c49080/c49080.png) | **Ember** `#c49080` | Errors, deletions |
 
 ## Features
 
