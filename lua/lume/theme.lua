@@ -56,6 +56,19 @@ function M.apply(config)
     load_module(mod, false)
   end
 
+  -- Apply custom highlights
+  if config.custom_highlights then
+    local custom = config.custom_highlights
+    if type(custom) == "function" then
+      custom = custom(p, "dark")
+    end
+    if type(custom) == "table" then
+      for k, v in pairs(custom) do
+        groups[k] = vim.tbl_extend("force", groups[k] or {}, v)
+      end
+    end
+  end
+
   for group, settings in pairs(groups) do
     vim.api.nvim_set_hl(0, group, settings)
   end

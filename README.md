@@ -142,6 +142,14 @@ All options are optional — defaults work out of the box.
 require("lume").setup({
   transparent = false, -- set to true to use your terminal's background
   italics = true,      -- set to false to disable italic comments/keywords
+  custom_highlights = function(colors, variant)
+    -- colors contains: backgrounds, foregrounds, accents, ansi, special
+    -- variant is "dark" (or "light" when a light theme is added)
+    return {
+      Normal = { bg = "#1E1F2E" },
+      MiniDiffSignAdd = { fg = colors.accents.sage },
+    }
+  end,
 })
 ```
 
