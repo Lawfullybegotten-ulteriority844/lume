@@ -3,6 +3,7 @@ local M = {}
 local defaults = {
   transparent = false,
   italics = true,
+  custom_highlights = nil,
 }
 
 M.config = vim.deepcopy(defaults)
