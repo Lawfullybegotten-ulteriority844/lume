@@ -35,7 +35,7 @@ function M.get(p, config)
     Typedef = { fg = ac.peach },
     Special = { fg = ac.teal },
     SpecialChar = { fg = ac.teal },
-    Tag = { fg = ac.rose },
+    Tag = { fg = ac.peach },
     Delimiter = { fg = fg.overlay },
     SpecialComment = { fg = fg.overlay, italic = italic },
     Debug = { fg = ac.ember },
@@ -147,8 +147,9 @@ function M.get(p, config)
     ["@markup.list.unchecked"] = { fg = fg.overlay },
 
     -- ── Treesitter — tags (HTML/JSX) ─────────────────────────────────────
-    ["@tag"] = { fg = ac.rose },
-    ["@tag.attribute"] = { fg = ac.peach, italic = italic },
+    ["@tag"] = { fg = ac.peach },
+    ["@tag.builtin"] = { fg = ac.teal },
+    ["@tag.attribute"] = { fg = ac.rose, italic = italic },
     ["@tag.delimiter"] = { fg = fg.overlay },
 
     -- ── Treesitter — diff ────────────────────────────────────────────────

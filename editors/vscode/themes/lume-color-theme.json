@@ -378,13 +378,13 @@
     {
       "scope": ["entity.name.tag"],
       "settings": {
-        "foreground": "#d0a0b8"
+        "foreground": "#88c0b8"
       }
     },
     {
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "#c4b080",
+        "foreground": "#d0a0b8",
         "fontStyle": "italic"
       }
     },
