@@ -272,7 +272,13 @@
       }
     },
     {
-      "scope": ["constant.numeric", "constant.language", "constant.character"],
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "{{accents.honey}}"
+      }
+    },
+    {
+      "scope": ["constant.language", "constant.character"],
       "settings": {
         "foreground": "{{accents.peach}}"
       }
@@ -343,6 +349,13 @@
       }
     },
     {
+      "scope": ["support.type.primitive"],
+      "settings": {
+        "foreground": "{{accents.lavender}}",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "scope": [
         "entity.name.type",
         "entity.name.class",
@@ -384,7 +397,7 @@
     {
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "{{accents.rose}}",
+        "foreground": "{{accents.sky}}",
         "fontStyle": "italic"
       }
     },
@@ -555,7 +568,7 @@
     "keyword": { "foreground": "{{accents.lavender}}", "fontStyle": "italic" },
     "comment": { "foreground": "{{foregrounds.comment}}", "fontStyle": "italic" },
     "string": "{{accents.sage}}",
-    "number": "{{accents.peach}}",
+    "number": "{{accents.honey}}",
     "operator": "{{accents.rose}}",
     "variable.readonly": "{{foregrounds.text}}",
     "property.readonly": { "foreground": "{{foregrounds.text}}", "fontStyle": "italic" },

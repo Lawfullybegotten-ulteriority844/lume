@@ -272,7 +272,13 @@
       }
     },
     {
-      "scope": ["constant.numeric", "constant.language", "constant.character"],
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#c4b080"
+      }
+    },
+    {
+      "scope": ["constant.language", "constant.character"],
       "settings": {
         "foreground": "#e8b4a0"
       }
@@ -343,6 +349,13 @@
       }
     },
     {
+      "scope": ["support.type.primitive"],
+      "settings": {
+        "foreground": "#b8a0e0",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "scope": [
         "entity.name.type",
         "entity.name.class",
@@ -384,7 +397,7 @@
     {
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "#d0a0b8",
+        "foreground": "#8cc0e0",
         "fontStyle": "italic"
       }
     },
@@ -555,7 +568,7 @@
     "keyword": { "foreground": "#b8a0e0", "fontStyle": "italic" },
     "comment": { "foreground": "#7e7896", "fontStyle": "italic" },
     "string": "#a0d4a8",
-    "number": "#e8b4a0",
+    "number": "#c4b080",
     "operator": "#d0a0b8",
     "variable.readonly": "#d8d0e4",
     "property.readonly": { "foreground": "#d8d0e4", "fontStyle": "italic" },

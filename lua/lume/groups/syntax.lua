@@ -52,7 +52,7 @@ function M.get(p, config)
 
     -- ── Treesitter — constants ───────────────────────────────────────────
     ["@constant"] = { fg = ac.peach },
-    ["@constant.builtin"] = { fg = ac.peach, italic = italic },
+    ["@constant.builtin"] = { fg = ac.lavender, italic = italic },
     ["@constant.macro"] = { fg = ac.teal },
 
     -- ── Treesitter — modules / namespaces ────────────────────────────────
@@ -72,12 +72,12 @@ function M.get(p, config)
     ["@character"] = { fg = ac.sage },
     ["@character.special"] = { fg = ac.teal },
     ["@boolean"] = { fg = ac.peach },
-    ["@number"] = { fg = ac.peach },
-    ["@number.float"] = { fg = ac.peach },
+    ["@number"] = { fg = ac.honey },
+    ["@number.float"] = { fg = ac.honey },
 
     -- ── Treesitter — types ───────────────────────────────────────────────
     ["@type"] = { fg = ac.peach },
-    ["@type.builtin"] = { fg = ac.peach, italic = italic },
+    ["@type.builtin"] = { fg = ac.lavender, italic = italic },
     ["@type.definition"] = { fg = ac.peach },
     ["@attribute"] = { fg = ac.peach },
     ["@attribute.builtin"] = { fg = ac.peach, italic = italic },
@@ -149,7 +149,7 @@ function M.get(p, config)
     -- ── Treesitter — tags (HTML/JSX) ─────────────────────────────────────
     ["@tag"] = { fg = ac.peach },
     ["@tag.builtin"] = { fg = ac.teal },
-    ["@tag.attribute"] = { fg = ac.rose, italic = italic },
+    ["@tag.attribute"] = { fg = ac.sky, italic = italic },
     ["@tag.delimiter"] = { fg = fg.overlay },
 
     -- ── Treesitter — diff ────────────────────────────────────────────────
