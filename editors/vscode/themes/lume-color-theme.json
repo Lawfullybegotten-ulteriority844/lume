@@ -557,7 +557,7 @@
     "string": "#a0d4a8",
     "number": "#e8b4a0",
     "operator": "#d0a0b8",
-    "variable.readonly": "#e8b4a0",
+    "variable.readonly": "#d8d0e4",
     "property.readonly": { "foreground": "#d8d0e4", "fontStyle": "italic" },
     "function.defaultLibrary": { "foreground": "#8cc0e0", "fontStyle": "italic" },
     "variable.defaultLibrary": { "foreground": "#d8d0e4", "fontStyle": "italic" }
