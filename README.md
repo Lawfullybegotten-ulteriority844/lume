@@ -225,7 +225,7 @@ curl -o ~/.config/wezterm/colors/lume.toml https://raw.githubusercontent.com/dan
 Then set in `~/.config/wezterm/wezterm.lua`:
 
 ```lua
-config.color_scheme = "lume"
+config.color_scheme = "Lume"
 ```
 
 </details>
