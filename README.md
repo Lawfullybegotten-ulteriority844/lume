@@ -19,7 +19,7 @@
 - **WCAG AA contrast** — validated at build time, never ships unreadable text
 - **15 Neovim plugin integrations** — Telescope, cmp, gitsigns, mini.nvim, noice, trouble, flash, snacks, and more
 - **Treesitter + LSP semantic tokens** — full highlighting with 450+ groups
-- **12 terminal/CLI targets** — Kitty, Alacritty, WezTerm, Ghostty, iTerm2, foot, Windows Terminal, tmux, fzf, bat, delta, lazygit
+- **13 terminal/CLI targets** — Kitty, Alacritty, WezTerm, Ghostty, iTerm2, foot, Windows Terminal, tmux, fzf, bat, delta, lazygit, OpenCode
 - **Transparent mode** — use your terminal's background
 - **Configurable italics** — toggle italics for comments and keywords
 
@@ -392,6 +392,24 @@ curl -s https://raw.githubusercontent.com/danfry1/lume/main/cli/lazygit/lume.yml
 ```
 
 Or if you prefer, copy the `gui.theme` section from [`cli/lazygit/lume.yml`](cli/lazygit/lume.yml) into your existing `config.yml`.
+
+</details>
+
+<details>
+<summary>OpenCode</summary>
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -o ~/.config/opencode/themes/lume.json https://raw.githubusercontent.com/danfry1/lume/main/cli/opencode/lume.json
+```
+
+Then select Lume using the `/theme` command in OpenCode, or set it in your `tui.json`:
+
+```json
+{
+  "theme": "lume"
+}
+```
 
 </details>
 

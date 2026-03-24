@@ -107,6 +107,7 @@ const TARGETS = [
   { template: "tmux.mustache", output: "tmux/lume-theme.conf" },
   { template: "vscode.mustache", output: "editors/vscode/themes/lume-color-theme.json" },
   { template: "zed.mustache", output: "editors/zed/themes/lume.json" },
+  { template: "opencode.mustache", output: "cli/opencode/lume.json" },
 ] as const;
 
 interface GenerateOptions {
