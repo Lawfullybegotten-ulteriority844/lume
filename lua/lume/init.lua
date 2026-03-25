@@ -3,6 +3,7 @@ local M = {}
 local defaults = {
   transparent = false,
   italics = true,
+  palette_overrides = nil,
   custom_highlights = nil,
 }
 

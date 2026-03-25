@@ -25,7 +25,19 @@ local PLUGIN_MODULES = {
 }
 
 function M.apply(config)
-  local p = require("lume.palette")
+  local p = vim.deepcopy(require("lume.palette"))
+
+  -- Apply palette overrides before any modules see the palette
+  if config.palette_overrides then
+    local overrides = config.palette_overrides
+    if type(overrides) == "function" then
+      overrides = overrides(p, "dark")
+    end
+    if type(overrides) == "table" then
+      p = vim.tbl_deep_extend("force", p, overrides)
+    end
+  end
+
   local groups = {}
 
   local function load_module(mod, is_core)

@@ -142,6 +142,10 @@ All options are optional — defaults work out of the box.
 require("lume").setup({
   transparent = false, -- set to true to use your terminal's background
   italics = true,      -- set to false to disable italic comments/keywords
+  palette_overrides = { -- override base palette colors before they cascade to all groups
+    foregrounds = { text = "#c8c8d8" },   -- softer foreground
+    accents = { lavender = "#a890d0" },   -- tweak any accent
+  },
   custom_highlights = function(colors, variant)
     -- colors contains: backgrounds, foregrounds, accents, ansi, special
     -- variant is "dark" (or "light" when a light theme is added)
@@ -152,6 +156,18 @@ require("lume").setup({
   end,
 })
 ```
+
+`palette_overrides` accepts a table or a function. When a function, it receives the full palette and variant, and should return a table of overrides:
+
+```lua
+palette_overrides = function(colors, variant)
+  return {
+    foregrounds = { text = "#c8c8d8", subtext = "#a0a0b0" },
+  }
+end,
+```
+
+Palette overrides are applied first — all built-in highlight groups and `custom_highlights` will see the modified palette.
 
 #### Plugin support
 
