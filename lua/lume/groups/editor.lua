@@ -56,6 +56,7 @@ function M.get(p, config)
 
     -- Popup menu
     Pmenu = { fg = fg.text, bg = bg.surface0 },
+    PmenuBorder = { fg = bg.surface2, bg = bg.surface0 },
     PmenuSel = { fg = fg.text, bg = bg.surface1, bold = true },
     PmenuSbar = { bg = bg.surface1 },
     PmenuThumb = { bg = bg.surface2 },
