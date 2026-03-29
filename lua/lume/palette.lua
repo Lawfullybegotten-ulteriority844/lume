@@ -31,7 +31,7 @@ M.accents = {
 }
 
 M.ansi = {
-  black = "#1e1a2c",
+  black = "#56526c",
   red = "#c49080",
   green = "#a0d4a8",
   yellow = "#c4b080",
@@ -39,7 +39,7 @@ M.ansi = {
   magenta = "#b8a0e0",
   cyan = "#88c0b8",
   white = "#b0a8c4",
-  brightBlack = "#302c42",
+  brightBlack = "#68647e",
   brightRed = "#d0a0b8",
   brightGreen = "#a8d4b8",
   brightYellow = "#e8b4a0",
