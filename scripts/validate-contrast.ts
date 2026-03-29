@@ -99,5 +99,10 @@ export function validatePalette(palette: Palette): ValidationResult {
     if (bg.surface0) check(`${name} on surface0`, hex, bg.surface0, 3);
   }
 
+  // ANSI black/brightBlack: must be readable as foreground on base
+  const ansi = palette.ansi || {};
+  if (ansi.black) check("ansi black on base", ansi.black, bg.base, 2);
+  if (ansi.brightBlack) check("ansi brightBlack on base", ansi.brightBlack, bg.base, 3);
+
   return { pass: failures.length === 0, failures };
 }

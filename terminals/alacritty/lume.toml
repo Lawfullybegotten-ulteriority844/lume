@@ -36,7 +36,7 @@ foreground = "#d8d0e4"
 background = "#0e0c18"
 
 [colors.normal]
-black = "#1e1a2c"
+black = "#56526c"
 red = "#c49080"
 green = "#a0d4a8"
 yellow = "#c4b080"
@@ -46,7 +46,7 @@ cyan = "#88c0b8"
 white = "#b0a8c4"
 
 [colors.bright]
-black = "#302c42"
+black = "#68647e"
 red = "#d0a0b8"
 green = "#a8d4b8"
 yellow = "#e8b4a0"

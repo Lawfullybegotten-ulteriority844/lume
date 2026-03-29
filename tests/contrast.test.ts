@@ -82,4 +82,34 @@ describe("validatePalette", () => {
   it("throws on missing required palette groups", () => {
     expect(() => validatePalette({} as any)).toThrow("Palette missing required group");
   });
+
+  it("fails when ansi black has insufficient contrast against base", () => {
+    const badPalette = {
+      name: "bad",
+      variant: "dark",
+      backgrounds: { base: "#12101e" },
+      foregrounds: { text: "#d8d0e4" },
+      accents: {},
+      ansi: { black: "#12101e" },
+      special: {},
+    };
+    const results = validatePalette(badPalette as any);
+    expect(results.pass).toBe(false);
+    expect(results.failures.some(f => f.name.includes("ansi black"))).toBe(true);
+  });
+
+  it("fails when ansi brightBlack has insufficient contrast against base", () => {
+    const badPalette = {
+      name: "bad",
+      variant: "dark",
+      backgrounds: { base: "#12101e" },
+      foregrounds: { text: "#d8d0e4" },
+      accents: {},
+      ansi: { brightBlack: "#1e1a2c" },
+      special: {},
+    };
+    const results = validatePalette(badPalette as any);
+    expect(results.pass).toBe(false);
+    expect(results.failures.some(f => f.name.includes("ansi brightBlack"))).toBe(true);
+  });
 });
